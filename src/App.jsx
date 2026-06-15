@@ -24,17 +24,17 @@ function App() {
   },[])
  
 
-  return !loading?(
-    <div className='min-h-screen flex flex-wrap content-between bg-gray-400 '>
-      <div className='w-full flex-1 flex justify-center items-center'>
-        <Header/>
+ return !loading ? (
+    <div className='min-h-screen flex flex-wrap content-between bg-gray-400'>
+      <div className='w-full block'>
+        <Header />
         <main>
-         TODO:<Outlet/>
+          <Outlet />
         </main>
-        <Footer/>
+        <Footer />
       </div>
     </div>
-  ):(null)
+  ) : null
 }
 
 export default App
